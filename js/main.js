@@ -51,7 +51,7 @@ if ($('body').attr('id') == 'index') {
         data: 'get data',
         success: function(data) {
             if (data.UserAuth == 'false') {
-                $(location).attr('href', '/login.html');
+                $(location).attr('href', 'https://exodusdg.github.io/loc_passport_client/login');
             } else {
                 $.ajax({
                     url: 'https://exo-loc-passport-server.herokuapp.com/getlocomotivelist',
@@ -82,7 +82,7 @@ $('.exit__button').click(function() {
         data: 'User Sign Out',
         success: function(data) {
             if (data.status == 'deautorized') {
-                $(location).attr('href', '/login.html');
+                $(location).attr('href', 'https://exodusdg.github.io/loc_passport_client/login');
             }
         }
     });
