@@ -27,7 +27,7 @@ $('.button_send').click(function() {
 
             if (data.status == 'Дані введені правильно!') {
                 setTimeout(() => {
-                    var url = "/";
+                    var url = "https://exodusdg.github.io/loc_passport_client/";
                     $(location).attr('href', url);
                 }, 700);
 
