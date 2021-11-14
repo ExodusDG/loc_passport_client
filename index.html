@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Паспорт локомотива - головна</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body id="index">
+    <section class="admin__panel">
+        <div class="admin__menu">
+            <div class="admin__menu_choise">
+                <div class="admin__menu_locomotive">
+                    <div class="admin__loc_wrapper">
+                        <span class="admin__selected_locomotive">Виберіть локомотив</span>
+                        <img class="admin__loc_down" src="img/down.svg" alt="Down">
+                    </div>
+                    <div class="admin__loc_list">
+
+                    </div>
+                </div>
+                <div class="admin__loc_button">
+                    <div class="admin__loc_wrapper_b">
+                        Підтвердити <img class="admin__loc_arrow" src="img/line.svg" alt="Line">
+                    </div>
+                </div>
+            </div>
+            <div class="admin__menu_list">
+                <div class="admin__menu_item">
+                    <span class="admin__menu_line line_visible"></span>
+                    <p>Характеристики</p>
+                </div>
+                <div class="admin__menu_item">
+                    <span class="admin__menu_line"></span>
+                    <p>Керування</p>
+                </div>
+                <div class="admin__menu_item">
+                    <span class="admin__menu_line"></span>
+                    <p>Історія поїздок</p>
+                </div>
+            </div>
+            <button class="exit__button">Вихід</button>
+        </div>
+        <div class="admin__info">
+            <div class="admin__info_stats">
+                <!-- 3 ОСНОВНІ ПОКАЗНИКИ -->
+                <div class="info__stats_main">
+                    <div class="info__stats_item">
+                        <div class="stats_item_circle">
+                            <p id="locomotive__speed">-</p>
+                            <p>км/год</p>
+                        </div>
+                        <p class="info__stats_name">Поточна швидкість</p>
+                    </div>
+                    <div class="info__stats_item">
+                        <div class="stats_item_circle">
+                            <p id="locomotive__fuel">-</p>
+                        </div>
+                        <p class="info__stats_name">Рівень палива в баку</p>
+                    </div>
+                    <div class="info__stats_item">
+                        <div class="stats_item_circle">
+                            <p id="locomotive__temp">-</p>
+                        </div>
+                        <p class="info__stats_name">Температура</p>
+                    </div>
+                </div>
+                <!-- ВСІ ПОКАЗНИКИ -->
+                <div class="info__stats_all">
+                    <div class="info__stats_buttons">
+                        <button class="info__stats_button button__selected" id="exp_stats">Експлуатаційні показники</button>
+                        <button class="info__stats_button" id="elec_stats">Електричне коло</button>
+                        <button class="info__stats_button" id="diesel_stats">Дизель тепловоза</button>
+                        <button class="info__stats_button" id="sup_stats">Допоміжне обладнання</button>
+                    </div>
+                    <div class="info__stats_list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
